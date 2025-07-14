@@ -10,6 +10,7 @@ def login_view(request):
         username = request.POST['username']
         password = request.POST['password']
 
+
         user = authenticate(request, username=username, password=password)
 
         # Check if the user exists
